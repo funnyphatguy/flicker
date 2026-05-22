@@ -1,4 +1,4 @@
-package com.example.flicker
+package io.github.funnyphatguy.flicker
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

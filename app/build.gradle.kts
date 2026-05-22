@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.flicker"
+    namespace = "io.github.funnyphatguy.flicker"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -12,7 +12,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.flicker"
+        applicationId = "io.github.funnyphatguy.flicker"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

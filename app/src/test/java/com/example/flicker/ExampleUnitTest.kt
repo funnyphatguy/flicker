@@ -1,4 +1,4 @@
-package com.example.flicker
+package io.github.funnyphatguy.flicker
 
 import org.junit.Test
 
