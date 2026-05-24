@@ -80,7 +80,7 @@ The `api/impl` split is intentionally avoided at this scale — it adds ceremony
 To install on a connected device or running emulator:
 
 ```bash
-./gradlew installDebug
+./gradlew build
 ```
 
 ## Roadmap
