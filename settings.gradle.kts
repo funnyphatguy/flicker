@@ -24,4 +24,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "flicker"
 include(":app")
- 
+include(":core:core")
+include(":core:ui:kit")
+include(":feature:swipe")
