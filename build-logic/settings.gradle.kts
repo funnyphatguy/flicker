@@ -18,3 +18,5 @@ pluginManagement {
         mavenCentral()
     }
 }
+
+include(":convention")
