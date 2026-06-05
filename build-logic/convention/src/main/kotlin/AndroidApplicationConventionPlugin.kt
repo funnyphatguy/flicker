@@ -21,7 +21,7 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
             namespace = "io.github.funnyphatguy.flicker"
 
             defaultConfig {
-                applicationId = "ioZ.github.funnyphatguy.flicker"
+                applicationId = flickerVersion("appId")
                 targetSdk = flickerVersion("targetSdk").toInt()
                 versionCode = flickerVersion("appVersionCode").toInt()
                 versionName = flickerVersion("appVersionName")

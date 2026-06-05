@@ -6,7 +6,7 @@ targetSdk = "35"
 # JVM toolchain
 jvmTarget = "21"
 # App identity & versioning
-appId = "io.flicker"
+appId = "io.flicker.android"
 appVersionCode = "1"
 appVersionName = "0.1.0"
 # Tooling (если ещё нет)
@@ -52,7 +52,7 @@ android-library = { id = "com.android.library", version.ref = "agp" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
 flicker-android-application = { id = "flicker.android.application", version = "unspecified" }
-flicker-android-library = { id = "flicker.android.library", version = "unspecified" }
+flicker-androidLibrary = { id = "flicker.android.library", version = "unspecified" }
 flicker-android-library-compose = { id = "flicker.android.library.compose", version = "unspecified" }
 flicker-jvm-library = { id = "flicker.jvm.library", version = "unspecified" }
 

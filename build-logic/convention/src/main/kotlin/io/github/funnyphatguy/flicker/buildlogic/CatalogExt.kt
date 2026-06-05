@@ -1,14 +1,15 @@
 package io.github.funnyphatguy.flicker.buildlogic
 
 import org.gradle.api.Project
+import org.gradle.api.artifacts.VersionCatalog
 import org.gradle.api.artifacts.VersionCatalogsExtension
 import org.gradle.kotlin.dsl.getByType
 
-internal fun Project.libs() =
-    extensions.getByType<VersionCatalogsExtension>().named("libs")
+internal val Project.libs: VersionCatalog
+    get() = extensions.getByType<VersionCatalogsExtension>().named("libs")
 
 internal fun Project.flickerVersion(name: String): String =
-    libs().findVersion(name).get().requiredVersion
+    libs.findVersion(name).get().requiredVersion
 
 internal fun Project.pluginId(alias: String): String =
-    libs().findPlugin(alias).get().get().pluginId
+    libs.findPlugin(alias).get().get().pluginId

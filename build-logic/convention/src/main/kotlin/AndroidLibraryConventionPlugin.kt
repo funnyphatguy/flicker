@@ -14,7 +14,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
         }
         extensions.configure<LibraryExtension> {
             configureAndroid(this)
-            namespace = derivedNamespace(target)
+            namespace = target.derivedNamespace
         }
         configureKotlin()
     }

@@ -10,8 +10,5 @@ internal fun Project.configureAndroid(
     commonExtension.apply {
         compileSdk = flickerVersion("compileSdk").toInt()
         defaultConfig.minSdk = flickerVersion("minSdk").toInt()
-
-        compileOptions.sourceCompatibility = JavaVersion.VERSION_21
-        compileOptions.targetCompatibility = JavaVersion.VERSION_21
     }
 }
