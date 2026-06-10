@@ -18,7 +18,7 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
             configureAndroid(this)
             configureCompose(this)
 
-            namespace = "io.github.funnyphatguy.flicker"
+            namespace = flickerVersion("appId")
 
             defaultConfig {
                 applicationId = flickerVersion("appId")

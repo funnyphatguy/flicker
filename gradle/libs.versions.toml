@@ -1,15 +1,11 @@
 [versions]
-# SDK
 compileSdk = "37"
 minSdk = "26"
 targetSdk = "35"
-# JVM toolchain
 jvmTarget = "21"
-# App identity & versioning
-appId = "io.flicker.android"
+appId = "io.github.funnyphatguy.flicker"
 appVersionCode = "1"
 appVersionName = "0.1.0"
-# Tooling (если ещё нет)
 agp = "9.2.1"
 coreKtx = "1.18.0"
 junit = "4.13.2"
@@ -30,7 +26,7 @@ junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
-kermit = { module = "co.touchlab:kermit", version.ref = "kermit" }
+kermit = { group = "co.touchlab", name = "kermit", version.ref = "kermit" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
@@ -41,9 +37,9 @@ androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "u
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version = "activity" }
-android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "agp" }
-kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
-compose-compiler-gradlePlugin = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "kotlin" }
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+compose-compiler-gradlePlugin = { group = "org.jetbrains.kotlin", name = "compose-compiler-gradle-plugin", version.ref = "kotlin" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -55,5 +51,4 @@ flicker-android-application = { id = "flicker.android.application", version = "u
 flicker-androidLibrary = { id = "flicker.android.library", version = "unspecified" }
 flicker-android-library-compose = { id = "flicker.android.library.compose", version = "unspecified" }
 flicker-jvm-library = { id = "flicker.jvm.library", version = "unspecified" }
-
 

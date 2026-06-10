@@ -1,9 +1,5 @@
 plugins { `kotlin-dsl` }
 
-
-
-
-
 dependencies {
     implementation(libs.android.gradlePlugin)
     implementation(libs.kotlin.gradlePlugin)
@@ -20,7 +16,6 @@ gradlePlugin {
             id = libs.plugins.flicker.androidLibrary.get().pluginId
             implementationClass = "AndroidLibraryConventionPlugin"
         }
-
         register("androidLibraryCompose") {
             id = libs.plugins.flicker.android.library.compose.get().pluginId
             implementationClass = "AndroidLibraryComposeConventionPlugin"

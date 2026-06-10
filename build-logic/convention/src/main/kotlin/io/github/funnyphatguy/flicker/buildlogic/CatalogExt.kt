@@ -13,3 +13,7 @@ internal fun Project.flickerVersion(name: String): String =
 
 internal fun Project.pluginId(alias: String): String =
     libs.findPlugin(alias).get().get().pluginId
+
+internal fun Project.derivedNamespace(): String {
+    return flickerVersion("appId") + path.replace(":", ".")
+}
